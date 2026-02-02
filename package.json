@@ -1,0 +1,32 @@
+{
+  "name": "one-llm-4-all",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@google/genai": "^1.38.0",
+    "@openrouter/sdk": "^0.4.0",
+    "groq-sdk": "^0.37.0",
+    "openai": "^6.16.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
