@@ -57,8 +57,8 @@ function App() {
 
       {/* Hero Section */}
       <section className="relative z-10 pt-24 pb-20 lg:pt-48 lg:pb-32 container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          <div className="flex-1 text-center lg:text-left">
+        <div className="flex flex-col items-center gap-12">
+          <div className="flex-1 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ function App() {
                 A type-safe, fluent adapter for OpenAI, Anthropic, Gemini, and
                 more. Running natively without external SDK dependencies.
               </p>
-              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
                 <button
                   onClick={copyToClipboard}
                   className="h-12 px-6 rounded-lg bg-white/5 border border-white/10 hover:border-primary-500/50 hover:bg-white/10 flex items-center gap-3 transition-all group w-full sm:w-auto cursor-pointer"
