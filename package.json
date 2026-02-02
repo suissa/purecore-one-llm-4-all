@@ -1,7 +1,7 @@
 {
   "name": "one-llm-4-all",
   "version": "1.0.0",
-  "author": "",
+  "author": "suissAI",
   "main": "dist/index.js",
   "devDependencies": {
     "@types/node": "^25.2.0",
