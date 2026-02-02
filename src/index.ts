@@ -1,5 +1,5 @@
 /**
- * one-llm-4-all: interface unificada e Fluent para Groq, OpenRouter, Claude e Gemini.
+ * one-llm-4-all: interface unificada e Fluent para OpenAI, Groq, OpenRouter, Claude e Gemini.
  *
  * @example
  * import { sendPrompt } from 'one-llm-4-all';

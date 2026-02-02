@@ -1,6 +1,6 @@
 # one-llm-4-all
 
-Interface unificada e **Fluent** para Groq, OpenRouter, Claude (Anthropic) e Gemini.
+Interface unificada e **Fluent** para **OpenAI**, Groq, OpenRouter, Claude (Anthropic) e Gemini.
 
 - [CHANGELOG](./CHANGELOG.md)
 
@@ -46,6 +46,7 @@ const obj = await sendPrompt('Retorne apenas um JSON: { "ok": true }', {
 
 ## Provedores
 
+- `openai` (**OpenAI**)
 - `groq` (Groq)
 - `openrouter` (OpenRouter)
 - `anthropic` (Claude)
