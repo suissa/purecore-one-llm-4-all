@@ -82,7 +82,8 @@ export async function runLLM(
       temperature: params.temperature ?? D.temperature,
       top_p: params.top_p ?? D.top_p,
       stop: params.stop,
-      response_format: output === "json" ? { type: "json_object" } : undefined,
+      response_format:
+        output === "json" ? { type: "json_object" as const } : undefined,
       stream: output === "stream",
     };
 

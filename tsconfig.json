@@ -3,11 +3,9 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "lib": [
-      "ES2022"
-    ],
+    "lib": ["ES2022"],
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "strict": true,
     "noImplicitAny": true,
     "declaration": true,
@@ -16,9 +14,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": [
-    "src/**/*"
-  ],
+  "include": ["src/**/*", "packages/**/*"],
   "exclude": [
     "node_modules",
     "**/*.spec.ts"

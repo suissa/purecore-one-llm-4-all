@@ -1,6 +1,6 @@
 {
   "name": "one-llm-4-all",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "suissAI",
   "main": "dist/index.js",
   "devDependencies": {
