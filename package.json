@@ -1,5 +1,5 @@
 {
-  "name": "one-llm-4-all",
+  "name": "@purecore/one-llm-4-all",
   "version": "0.1.0",
   "author": "suissAI",
   "main": "dist/index.js",
