@@ -1,5 +1,13 @@
 # Changelog
 
+## [Release] v2.0.1
+
+### What's Changed
+
+- ✅ **TDD & BDD**: Reestruturação completa dos testes em `tests/unit` e `tests/integration`.
+- ✅ **Cobertura de Testes**: Adicionada cobertura unitária para todos os clientes nativos (OpenAI, Anthropic, Gemini).
+- ✅ **Cenários BDD**: Implementados testes de integração baseados em cenários de uso real com `sendPrompt`.
+
 ## [Release] v2.0.0
 
 ### What's Changed
