@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Terminal, Cpu, Box, ArrowRight, Github, Copy, Zap } from 'lucide-react';
+import { Terminal, Cpu, Box, ArrowRight, Github, Copy } from "lucide-react";
 import { useState } from 'react';
 
 function App() {
