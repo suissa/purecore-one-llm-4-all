@@ -1,0 +1,25 @@
+bun test v1.3.1 (89fa0f34)
+
+tests/llm.test.ts:
+(pass) OpenAI & Compatible Providers > should call OpenAI API correctly [9.98ms]
+(pass) OpenAI & Compatible Providers > should work via sendPrompt fluent interface (OpenAI) [3.14ms]
+(pass) OpenAI & Compatible Providers > should work via sendPrompt fluent interface (Groq) [1.66ms]
+(pass) OpenAI & Compatible Providers > should work via sendPrompt fluent interface (Anthropic) [1.83ms]
+(pass) OpenAI & Compatible Providers > should work via sendPrompt fluent interface (Gemini) [2.20ms]
+(pass) OpenAI & Compatible Providers > Stream Parser Unit Test > should parse SSE chunks correctly [3.13ms]
+1 | /**
+2 |  * Utilit├írio para transformar ReadableStream de diferentes provedores em um stream unificado de texto.
+3 |  */
+4 | 
+5 | export async function* parseSSE(stream: ReadableStream): AsyncGenerator<string> {
+6 |   const reader = stream.getReader();
+              ^
+TypeError: ReadableStream is locked
+      at parseSSE (/mnt/d/www/Freelas/PROJETOS_OPENSOURCE/MEUS/@purecore/canonical/one-llm-4-all/src/utils/stream-parser.ts:6:25)
+      at <anonymous> (/mnt/d/www/Freelas/PROJETOS_OPENSOURCE/MEUS/@purecore/canonical/one-llm-4-all/tests/llm.test.ts:117:22)
+(fail) OpenAI & Compatible Providers > should support streaming via getStream() [14.23ms]
+
+ 6 pass
+ 1 fail
+ 6 expect() calls
+Ran 7 tests across 1 file. [913.00ms]

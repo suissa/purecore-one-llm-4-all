@@ -1,9 +1,16 @@
 {
   "name": "one-llm-4-all",
   "version": "1.0.0",
-  "description": "",
+  "author": "",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "msw": "^2.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -11,22 +18,14 @@
       "default": "./dist/index.js"
     }
   },
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "@anthropic-ai/sdk": "^0.71.2",
-    "@google/genai": "^1.38.0",
-    "@openrouter/sdk": "^0.4.0",
-    "groq-sdk": "^0.37.0",
-    "openai": "^6.16.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3"
-  }
+  "type": "module",
+  "types": "dist/index.d.ts"
 }

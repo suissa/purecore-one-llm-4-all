@@ -1,0 +1,99 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "OneLLM4All API",
+    "version": "1.0.0",
+    "description": "Interface unificada para múltiplos provedores de LLM (OpenAI, Groq, Anthropic, Gemini, DeepSeek, etc.)"
+  },
+  "paths": {
+    "/chat/completions": {
+      "post": {
+        "summary": "Envia um prompt para um provedor de LLM",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnifiedLLMParams"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Resposta do LLM",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/UnifiedLLMTextResult"
+                }
+              },
+              "text/event-stream": {
+                "description": "Stream de eventos SSE"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "LLMProvider": {
+        "type": "string",
+        "enum": ["groq", "openrouter", "anthropic", "gemini", "openai", "deepseek", "mistral", "perplexity"]
+      },
+      "LLMMessage": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": ["system", "user", "assistant"]
+          },
+          "content": {
+            "type": "string"
+          }
+        },
+        "required": ["role", "content"]
+      },
+      "UnifiedLLMParams": {
+        "type": "object",
+        "properties": {
+          "messages": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "array", "items": { "$ref": "#/components/schemas/LLMMessage" } }
+            ]
+          },
+          "model": { "type": "string" },
+          "provider": { "$ref": "#/components/schemas/LLMProvider" },
+          "apiKey": { "type": "string" },
+          "temperature": { "type": "number", "minimum": 0, "maximum": 2 },
+          "max_tokens": { "type": "integer" },
+          "stream": { "type": "boolean" },
+          "response_format": {
+            "type": "string",
+            "enum": ["text", "json_object"]
+          }
+        },
+        "required": ["messages", "model"]
+      },
+      "UnifiedLLMTextResult": {
+        "type": "object",
+        "properties": {
+          "text": { "type": "string" },
+          "usage": {
+            "type": "object",
+            "properties": {
+              "prompt_tokens": { "type": "integer" },
+              "completion_tokens": { "type": "integer" },
+              "total_tokens": { "type": "integer" }
+            }
+          },
+          "model": { "type": "string" },
+          "finish_reason": { "type": "string" }
+        }
+      }
+    }
+  }
+}

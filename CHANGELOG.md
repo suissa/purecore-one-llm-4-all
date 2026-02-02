@@ -1,5 +1,26 @@
 # Changelog
 
+## [Release] v2.0.0
+
+### What's Changed
+
+- [x] **Arquitetura Multi-Provider Nativa**: Removidos SDKs externos (`groq-sdk`, `@anthropic-ai/sdk`, etc.) em favor de implementações locais em `/packages`.
+- [x] **Novo Pacote `reqify`**: Cliente HTTP nativo com suporte a retentativas (retry) e streaming utilizando `fetch`.
+- [x] **Suporte a Novos Provedores**: Adicionados OpenAI, DeepSeek, Mistral e Perplexity via interface unificada.
+- [x] **Tipagem Semântica Nominal**: Implementação de Branded Types para `ApiKey`, `ModelId` e `PromptContent` visando maior segurança de tipos.
+- [x] **Suporte a Streaming**: Adicionado método `.getStream()` na interface fluente com parsers de SSE otimizados.
+- [x] **Suite de Testes Abrangente**: Implementados testes unitários e de integração utilizando `Vitest` e `MSW`.
+- [x] **Documentação OpenAPI**: Gerado arquivo `openapi.json` e `swagger.html` para visualização técnica da interface.
+
+### New Providers Added
+
+- OpenAI (Direct)
+- DeepSeek
+- Mistral
+- Perplexity
+
+---
+
 ## [Release] v1.1.0
 
 ### What's Changed
@@ -10,10 +31,6 @@
 - [x] Adaptador `runLLM` para Groq, OpenRouter, Anthropic e Gemini (modo não-streaming)
 - [x] Tipos: `LLMMessage`, `LLMMessageRole`, `LLMProvider`, `UnifiedLLMTextResult`, `PromptFluent`, `SendPromptOptions`
 
-### New Contributors
-
-- *N/A*
-
 ---
 
 ## [Release] v1.0.0
@@ -23,7 +40,3 @@
 - [x] Instalação dos SDKs de LLM: `groq-sdk`, `@openrouter/sdk`, `@anthropic-ai/sdk`, `@google/genai`
 - [x] Criação de `.gitignore` com `node_modules` e `dist`
 - [x] Relatório em `reports/25-01-2025_instalacao-llm-sdks.md` com libs, exemplos e links
-
-### New Contributors
-
-- *N/A*
