@@ -1,6 +1,6 @@
 {
   "name": "@purecore/one-llm-4-all",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "author": "suissAI",
   "main": "dist/index.js",
   "devDependencies": {
@@ -18,9 +18,28 @@
       "default": "./dist/index.js"
     }
   },
-  "description": "",
-  "keywords": [],
+  "description": "Unified Fluent Interface for OpenAI, Groq, OpenRouter, Claude, Gemini, DeepSeek and Mistral. Native implementation, zero bloating.",
+  "keywords": [
+    "llm",
+    "ai",
+    "openai",
+    "groq",
+    "anthropic",
+    "gemini",
+    "openrouter",
+    "deepseek",
+    "mistral",
+    "wrapper",
+    "fluent-api",
+    "typescript"
+  ],
   "license": "ISC",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "openapi.json"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
