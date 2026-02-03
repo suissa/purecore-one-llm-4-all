@@ -215,6 +215,7 @@ function App() {
             <span className="text-2xl font-bold text-white">Perplexity</span>
           </div>
         </div>
+        <p></p>
       </section>
 
       {/* Footer */}
