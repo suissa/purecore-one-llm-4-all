@@ -71,10 +71,12 @@ function App() {
               <img
                 src="/logo.png"
                 alt="Logo"
-                className="h-[300px] w-auto object-contain mx-auto"
+                className="h-[300px] w-auto object-contain mx-auto block"
               />
 
-              <p className="text-gray-400 text-lg lg:text-xl mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <div className="h-12 w-full"></div>
+
+              <p className="text-gray-400 text-lg lg:text-xl mb-8 leading-relaxed max-w-2xl mx-auto">
                 A type-safe, fluent adapter for OpenAI, Anthropic, Gemini, and
                 more. Running natively without external SDK dependencies.
               </p>
@@ -127,19 +129,33 @@ function App() {
                       {`{ sendPrompt }`}{" "}
                       <span className="text-purple-400">from</span>{" "}
                       <span className="text-green-400">'one-llm-4-all'</span>;
+                      <br />
+                      <br />
                       <span className="text-gray-500">// Fluent Interface</span>
+                      <br />
                       <span className="text-purple-400">const</span> response ={" "}
                       <span className="text-purple-400">await</span>{" "}
                       <span className="text-blue-400">sendPrompt</span>(
+                      <br />
+                      &nbsp;&nbsp;
                       <span className="text-green-400">
                         'Explain quantum computing'
                       </span>
-                      ,{`{`}
-                      model:{" "}
+                      ,
+                      <br />
+                      &nbsp;&nbsp;{`{`}
+                      <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;model:{" "}
                       <span className="text-green-400">'gpt-4-turbo'</span>,
-                      provider: <span className="text-green-400">'openai'</span>
-                      {`}`}) .<span className="text-yellow-400">getText</span>
+                      <br />
+                      &nbsp;&nbsp;&nbsp;&nbsp;provider:{" "}
+                      <span className="text-green-400">'openai'</span>
+                      <br />
+                      &nbsp;&nbsp;{`}`}
+                      <br />) .<span className="text-yellow-400">getText</span>
                       ();
+                      <br />
+                      <br />
                       <span className="text-blue-400">console</span>
                       .log(response);
                     </code>
