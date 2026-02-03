@@ -24,7 +24,9 @@
   "scripts": {
     "build": "tsc",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "fetch:free-models": "bun scripts/fetch_free_models.ts",
+    "run:free-rotation": "bun scripts/run_free_rotation.ts"
   },
   "type": "module",
   "types": "dist/index.d.ts"

@@ -1,0 +1,167 @@
+[
+  {
+    "id": "openrouter/free",
+    "name": "Free Models Router",
+    "context_length": 200000
+  },
+  {
+    "id": "stepfun/step-3.5-flash:free",
+    "name": "StepFun: Step 3.5 Flash (free)",
+    "context_length": 256000
+  },
+  {
+    "id": "arcee-ai/trinity-large-preview:free",
+    "name": "Arcee AI: Trinity Large Preview (free)",
+    "context_length": 131000
+  },
+  {
+    "id": "upstage/solar-pro-3:free",
+    "name": "Upstage: Solar Pro 3 (free)",
+    "context_length": 128000
+  },
+  {
+    "id": "liquid/lfm-2.5-1.2b-thinking:free",
+    "name": "LiquidAI: LFM2.5-1.2B-Thinking (free)",
+    "context_length": 32768
+  },
+  {
+    "id": "liquid/lfm-2.5-1.2b-instruct:free",
+    "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
+    "context_length": 32768
+  },
+  {
+    "id": "allenai/molmo-2-8b:free",
+    "name": "AllenAI: Molmo2 8B (free)",
+    "context_length": 36864
+  },
+  {
+    "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+    "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
+    "context_length": 256000
+  },
+  {
+    "id": "arcee-ai/trinity-mini:free",
+    "name": "Arcee AI: Trinity Mini (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "tngtech/tng-r1t-chimera:free",
+    "name": "TNG: R1T Chimera (free)",
+    "context_length": 163840
+  },
+  {
+    "id": "nvidia/nemotron-nano-12b-v2-vl:free",
+    "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
+    "context_length": 128000
+  },
+  {
+    "id": "qwen/qwen3-next-80b-a3b-instruct:free",
+    "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
+    "context_length": 262144
+  },
+  {
+    "id": "nvidia/nemotron-nano-9b-v2:free",
+    "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
+    "context_length": 128000
+  },
+  {
+    "id": "openai/gpt-oss-120b:free",
+    "name": "OpenAI: gpt-oss-120b (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "openai/gpt-oss-20b:free",
+    "name": "OpenAI: gpt-oss-20b (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "z-ai/glm-4.5-air:free",
+    "name": "Z.AI: GLM 4.5 Air (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "qwen/qwen3-coder:free",
+    "name": "Qwen: Qwen3 Coder 480B A35B (free)",
+    "context_length": 262000
+  },
+  {
+    "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+    "name": "Venice: Uncensored (free)",
+    "context_length": 32768
+  },
+  {
+    "id": "google/gemma-3n-e2b-it:free",
+    "name": "Google: Gemma 3n 2B (free)",
+    "context_length": 8192
+  },
+  {
+    "id": "tngtech/deepseek-r1t2-chimera:free",
+    "name": "TNG: DeepSeek R1T2 Chimera (free)",
+    "context_length": 163840
+  },
+  {
+    "id": "deepseek/deepseek-r1-0528:free",
+    "name": "DeepSeek: R1 0528 (free)",
+    "context_length": 163840
+  },
+  {
+    "id": "google/gemma-3n-e4b-it:free",
+    "name": "Google: Gemma 3n 4B (free)",
+    "context_length": 8192
+  },
+  {
+    "id": "qwen/qwen3-4b:free",
+    "name": "Qwen: Qwen3 4B (free)",
+    "context_length": 40960
+  },
+  {
+    "id": "tngtech/deepseek-r1t-chimera:free",
+    "name": "TNG: DeepSeek R1T Chimera (free)",
+    "context_length": 163840
+  },
+  {
+    "id": "mistralai/mistral-small-3.1-24b-instruct:free",
+    "name": "Mistral: Mistral Small 3.1 24B (free)",
+    "context_length": 128000
+  },
+  {
+    "id": "google/gemma-3-4b-it:free",
+    "name": "Google: Gemma 3 4B (free)",
+    "context_length": 32768
+  },
+  {
+    "id": "google/gemma-3-12b-it:free",
+    "name": "Google: Gemma 3 12B (free)",
+    "context_length": 32768
+  },
+  {
+    "id": "google/gemma-3-27b-it:free",
+    "name": "Google: Gemma 3 27B (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "meta-llama/llama-3.3-70b-instruct:free",
+    "name": "Meta: Llama 3.3 70B Instruct (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "meta-llama/llama-3.2-3b-instruct:free",
+    "name": "Meta: Llama 3.2 3B Instruct (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "qwen/qwen-2.5-vl-7b-instruct:free",
+    "name": "Qwen: Qwen2.5-VL 7B Instruct (free)",
+    "context_length": 32768
+  },
+  {
+    "id": "nousresearch/hermes-3-llama-3.1-405b:free",
+    "name": "Nous: Hermes 3 405B Instruct (free)",
+    "context_length": 131072
+  },
+  {
+    "id": "meta-llama/llama-3.1-405b-instruct:free",
+    "name": "Meta: Llama 3.1 405B Instruct (free)",
+    "context_length": 131072
+  }
+]
