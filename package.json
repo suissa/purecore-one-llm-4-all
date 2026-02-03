@@ -26,7 +26,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "fetch:free-models": "bun scripts/fetch_free_models.ts",
-    "run:free-rotation": "bun scripts/run_free_rotation.ts"
+    "run:free-rotation": "bun scripts/run_free_rotation.ts",
+    "test:real-rotation": "bun scripts/real_rotation_test.ts"
   },
   "type": "module",
   "types": "dist/index.d.ts"

@@ -1,5 +1,14 @@
 # Changelog
 
+## [Release] v2.1.0
+
+### What's Changed
+
+- ✨ **Real rotation testing**: Adicionado script `scripts/real_rotation_test.ts` para testes de integração contínuos com rotação de modelos a cada 1 minuto.
+- 🔧 **Scripts**: Adicionado comando `test:real-rotation` ao `package.json`.
+- 📊 **Monitoring**: Implementado log em arquivo `rotation_results.log` para acompanhar o progresso dos testes de longa duração.
+
+
 ## [Release] v2.0.1
 
 ### What's Changed

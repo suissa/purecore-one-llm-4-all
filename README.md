@@ -54,8 +54,23 @@ const obj = await sendPrompt('Retorne apenas um JSON: { "ok": true }', {
 
 API keys: `GROQ_API_KEY`, `OPENROUTER_API_KEY`, `ANTHROPIC_API_KEY`, `GEMINI_API_KEY` (ou `apiKey` nas opções).
 
-## Build
+## Testes de Rotação Real
 
+Recentemente adicionamos um sistema de testes de integração real que rotaciona modelos a cada 1 minuto. Isso é ideal para validar a estabilidade de múltiplos endpoints.
+
+### Como foi feito
+O script `scripts/real_rotation_test.ts` utiliza a interface fluente da biblioteca para percorrer o `free_models.json`, enviando um prompt de teste para cada modelo com um intervalo de 60 segundos.
+
+### Como funciona
+1. Carrega os modelos suportados.
+2. Itera sequencialmente.
+3. Registra logs detalhados em `rotation_results.log`.
+
+### Como testar
 ```bash
-bun run build
+bun run test:real-rotation
 ```
+
+---
+
+Para saber mais sobre as mudanças recentes, veja o [CHANGELOG.md](./CHANGELOG.md).
