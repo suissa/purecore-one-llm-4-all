@@ -209,6 +209,7 @@ function App() {
             <span className="text-2xl font-bold text-white">Anthropic</span>
             <span className="text-2xl font-bold text-white">Gemini</span>
             <span className="text-2xl font-bold text-white">Groq</span>
+            <span className="text-2xl font-bold text-white">OpenRouter</span>
             <span className="text-2xl font-bold text-white">Mistral</span>
           </div>
         </div>
