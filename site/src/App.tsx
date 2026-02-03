@@ -56,7 +56,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative z-10 pt-24 pb-20 lg:pt-48 lg:pb-32 container mx-auto px-6">
+      <section className="relative z-10 pt-24 pb-20 lg:pt-24 lg:pb-32 container mx-auto px-6">
         <div className="flex flex-col items-center gap-12">
           <div className="flex-1 text-center">
             <motion.div
@@ -73,10 +73,7 @@ function App() {
                 alt="Logo"
                 className="h-[300px] w-auto object-contain mx-auto"
               />
-              <h1 className="text-5xl lg:text-7xl font-bold leading-tight mb-6">
-                {/* Unified AI <br /> */}
-                <span className="text-gradient">Native Interface</span>
-              </h1>
+
               <p className="text-gray-400 text-lg lg:text-xl mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
                 A type-safe, fluent adapter for OpenAI, Anthropic, Gemini, and
                 more. Running natively without external SDK dependencies.
