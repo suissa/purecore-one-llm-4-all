@@ -5,6 +5,7 @@
 ### What's Changed
 
 - ✨ **Real rotation testing**: Adicionado script `scripts/real_rotation_test.ts` para testes de integração contínuos com rotação de modelos a cada 1 minuto.
+- ⚡️ **Log Enhancements**: Adicionado feedback visual em tempo real no terminal com countdown e contador de progresso.
 - 🔧 **Scripts**: Adicionado comando `test:real-rotation` ao `package.json`.
 - 📊 **Monitoring**: Implementado log em arquivo `rotation_results.log` para acompanhar o progresso dos testes de longa duração.
 
