@@ -25,9 +25,13 @@ function buildParams(promptOrMessages: string | LLMMessage[], opts: SendPromptOp
   } as UnifiedLLMParams;
 }
 
+import type { UnifiedLLMTextResult } from '../types/llm.types.js';
+
 export interface PromptFluent {
   /** Retorna o texto puro da resposta. */
   getText(): Promise<string>;
+  /** Retorna o resultado completo, incluindo texto, uso de tokens e modelo. */
+  getFullResult(): Promise<UnifiedLLMTextResult>;
   /** Retorna o corpo parseado como JSON. */
   getJSONResponse<T = unknown>(): Promise<T>;
   /** Retorna um AsyncGenerator para streaming de texto. */
@@ -39,6 +43,9 @@ function createFluent(params: UnifiedLLMParams): PromptFluent {
     async getText() {
       const r = await runLLM(params, "text");
       return r.text;
+    },
+    async getFullResult() {
+      return await runLLM(params, "text");
     },
     async getJSONResponse<T>() {
       const r = await runLLM(params, "json");
